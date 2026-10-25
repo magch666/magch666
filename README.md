@@ -43,17 +43,19 @@ I'm building a collection of hands-on cybersecurity projects. Each project will 
 ## 🎓 Certifications & Training
 
 **Fortinet**
-- Fortinet Certified Associate Cybersecurity
-- Fortinet Certified Fundamentals Cybersecurity
-- Fortinet FortiGate 7.6 Operator
-- NSE 1, NSE 2, and NSE 3
-- Introduction to the Threat Landscape 3.0
-- Technical Introduction to Cybersecurity 3.0
+- Fortinet Certified Associate Cybersecurity (https://www.credly.com/badges/46d7344f-4df7-423f-9d2f-669323b3971a)
+- Fortinet Certified Fundamentals Cybersecurity (https://www.credly.com/badges/1db02e28-e9f3-47e7-989c-532c6195379a)
+- Fortinet FortiGate 7.6 Operator (https://www.credly.com/badges/c991a819-3324-4e78-9762-3a0696cbcbcf)
+- NSE 1 (https://www.credly.com/badges/40652f11-6f64-4fca-a293-dfe1479aee86)
+- NSE 2 (https://www.credly.com/badges/33957d29-8339-4505-b0ed-430a1f0b4d4f)
+- NSE 3 (https://www.credly.com/badges/ca71ba99-211e-4d5e-be1f-895c0733107a)
+- Introduction to the Threat Landscape 3.0 (https://www.credly.com/badges/4b099dc8-00e4-4a84-b4e4-d064f8f181c8)
+- Technical Introduction to Cybersecurity 3.0 (https://www.credly.com/badges/342b7fdf-7514-4cfe-9b67-857951cc209f)
 
 **Cisco Networking Academy**
-- Introduction to Cybersecurity
-- Networking Basics
-- Introduction to Packet Tracer
+- Introduction to Cybersecurity (https://www.credly.com/badges/98a7faf6-9832-4598-910e-c9e8a0cdf892)
+- Networking Basics (https://www.credly.com/badges/d90071a7-707c-4b7a-8261-49482b6ecc39)
+- Introduction to Packet Tracer (https://www.credly.com/badges/3239f2fa-4e6c-4589-a7c9-36f452641d07)
 
 ## 📖 My Approach
 
