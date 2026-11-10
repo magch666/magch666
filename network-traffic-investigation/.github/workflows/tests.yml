@@ -1,0 +1,22 @@
+name: Network flow lab checks
+
+on:
+  push:
+    paths:
+      - "network-traffic-investigation/**"
+  pull_request:
+    paths:
+      - "network-traffic-investigation/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: python -m unittest discover -s network-traffic-investigation/tests -v
+      - name: Run sample analysis
+        run: python network-traffic-investigation/src/analyze_flows.py --input network-traffic-investigation/data/flows.csv --output /tmp/flows-report.json
