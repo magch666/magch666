@@ -1,0 +1,25 @@
+name: Python checks
+
+on:
+  push:
+    paths:
+      - "soc-auth-log-analyzer/**"
+  pull_request:
+    paths:
+      - "soc-auth-log-analyzer/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: soc-auth-log-analyzer
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Check CLI output
+        run: python src/analyze.py --input data/auth_events.jsonl --output /tmp/report.json
