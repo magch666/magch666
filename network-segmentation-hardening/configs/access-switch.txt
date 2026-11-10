@@ -1,0 +1,46 @@
+! Reference only: adapt interfaces and syntax for your switch model.
+! VLANs and the trunk are shown; inter-VLAN policy belongs on a firewall/L3 gateway.
+
+vlan 10
+ name USERS
+vlan 20
+ name SERVERS
+vlan 30
+ name MANAGEMENT
+vlan 40
+ name GUEST
+vlan 999
+ name UNUSED-NATIVE
+
+! Example user access port
+interface GigabitEthernet0/1
+ description User workstation
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+
+! Example guest access port
+interface GigabitEthernet0/2
+ description Guest access point
+ switchport mode access
+ switchport access vlan 40
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+
+! Example trunk toward firewall/router
+interface GigabitEthernet0/24
+ description Uplink to policy enforcement device
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,999
+ no shutdown
+
+! Example unused ports: adapt the range to actual hardware
+interface range GigabitEthernet0/3-23
+ description Unused - administratively disabled
+ switchport mode access
+ switchport access vlan 999
+ shutdown
