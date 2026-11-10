@@ -65,7 +65,7 @@ def main():
         report = analyze(rows, args.fanout_threshold)
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
-    args.output.write_text(json.dumps(report, indent=2) + "\\n", encoding="utf-8")
+    args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(f"Flows processed: {report['flows_processed']}")
     print(f"Conversation pairs: {report['conversation_pairs']}")
     print(f"Port fan-out findings: {len(report['findings'])}")
